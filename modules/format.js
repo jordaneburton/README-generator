@@ -43,6 +43,7 @@ ${response.contribute}
 
 ${response.test}
 `;
+    }
     
     contents.push(`[License](#license)`);
     // template literal
@@ -60,7 +61,6 @@ If you have any additional questions, contact me using the following links:
 - Email: [${response.email.trim()}]
 - GitHub: [${response.username.trim()}](https://github.com/${response.username.trim()})
 `;
-    }
 
     contents.forEach((section, index) => {
         // template literal
@@ -70,7 +70,7 @@ ${index + 1}. ${section}`
 
     // Craft full README with filled sections
     // template literal
-    fileText = `${license.badge} [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+    fileText = `${license.badge}
 
 # ${response.title.trim()} 
 
