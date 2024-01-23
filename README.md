@@ -15,15 +15,15 @@ The README Generator utilizes the Inquirer node.js package to craft a README and
 
 ## <a id='install'>Installation</a>
 
-This application does require node.js and therefore, you must install it before you can use the application. If you haven't installed node.js, use the following link [https://nodejs.org/en/download] and install the proper version according to your OS. Once installed, run the node setup executable. Once node.js is setup on your system, go to the directory where you plan to download the repository and run the command \`npm init -y\` in your terminal. Then run \`npm i inquirer@8.2.4\` and now you will be able to download the repository into the directory.
+This application does require node.js and therefore, you must install it before you can use the application. If you haven't installed node.js, use the following link [https://nodejs.org/en/download] and install the proper version according to your OS. Once installed, run the node setup executable. Once node.js is setup on your system, go to the directory where you plan to download the repository and run the command `npm init -y` in your terminal. Then run `npm i inquirer@8.2.4` and now you will be able to download the repository into the directory.
 
 ## <a id='usage'>Usage</a>
 
-To use the application, go to the repository's directory and run the command \`node index\` in your terminal. Shortly thereafter, the application will prompt you with various questions in order to fill out the README. Note, for all inputs where you must type out your input **THE APPLICATION DOES TAKE MARKDOWN SYNTAX** and is designed for this. However, when using backticks '\`' you must put a backslash '\' in front of the backtick like so \`'\\`'\`. *All other markdown syntax is valid as is though*.
+To use the application, go to the repository's directory and run the command `node index` in your terminal. Shortly thereafter, the application will prompt you with various questions in order to fill out the README. Note, for all inputs where you must type out your input **THE APPLICATION DOES TAKE MARKDOWN SYNTAX** and is designed for this. However, when using backticks " \` " you must put a backslash " \ " in front of the backtick. Because of this, code-blocks must be crafted **manually** after the README generates. *All other markdown syntax is valid as is though*.
 
 ## <a id='contribute'>Contribution</a>
 
-I have decided to adopt the [Contributer Convenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) for my project. If you would like to add more license support, all license information goes into 'licenseMaker.js' inside of the modules folder. You can utilize the links in the Acknowledgements section for the corresponding badge links and license text. Once the license info is inserted into 'licenseMaker.js' insert the license type as an option in 'index.js'. For the time being, I will moderate all contributions and violations myself. To report any violations, contact me using my contact links in the <a id='questions'>Questions</a> section.
+I have decided to adopt the [Contributer Convenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) for my project. If you would like to add more license support, all license information goes into 'licenseMaker.js' inside of the modules folder. You can utilize the links in the Acknowledgements section for the corresponding badge links and license text. Once the license info is inserted into 'licenseMaker.js' insert the license type as an option in 'index.js'. For the time being, I will moderate all contributions and violations myself. To report any violations, contact me using my contact links in the [Questions](#questions) section.
 
 ## <a id='license'>License</a>
 
