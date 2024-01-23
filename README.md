@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # README Generator 
 
@@ -19,7 +19,7 @@ This application does require node.js and therefore, you must install it before 
 
 ## <a id='usage'>Usage</a>
 
-To use the application, go to the repository's directory and run the command `node index` in your terminal. Shortly thereafter, the application will prompt you with various questions in order to fill out the README. Note, for all inputs where you must type out your input **THE APPLICATION DOES TAKE MARKDOWN SYNTAX** and is designed for this. However, when using backticks " \` " you must put a backslash " \ " in front of the backtick. Because of this, code-blocks must be crafted **manually** after the README generates. *All other markdown syntax is valid as is though*.
+To use the application, go to the repository's directory and run the command `node index` in your terminal. Shortly thereafter, the application will prompt you with various questions in order to fill out the README. Note, for all inputs where you must type out your input **THE APPLICATION DOES TAKE MARKDOWN SYNTAX** and is designed for this.
 
 ## <a id='contribute'>Contribution</a>
 
