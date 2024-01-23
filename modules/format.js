@@ -56,8 +56,8 @@ This application is covered under the ${response.license} license.
     fileText = `${fileText}
 ## <a id='questions'>Questions</a>
 
-If you have any questions, contact me using the following links:
-- Email: (${response.email.trim()})
+If you have any additional questions, contact me using the following links:
+- Email: [${response.email.trim()}]
 - GitHub: [${response.username.trim()}](https://github.com/${response.username.trim()})
 `;
     }
@@ -70,7 +70,7 @@ ${index + 1}. ${section}`
 
     // Craft full README with filled sections
     // template literal
-    fileText = `${license.badge}
+    fileText = `${license.badge} [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
 # ${response.title.trim()} 
 
@@ -79,7 +79,15 @@ ${index + 1}. ${section}`
 ${response.description.trim()}
 
 ## Table of Contents ${tableContents}
-${fileText}`;
+${fileText}
+
+## Acknowledgements
+
+Special thanks to the following sources for providing functionality and general guidance help:
+- Special thanks to [Inquirer.js](https://github.com/SBoudrias/Inquirer.js) for the prompt functionality
+- Thank you to [Shields.io](https://shields.io/) for crafting license badges
+- BIG thank you to [Lukas](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba) for providing the Shield.io links for the license badges
+- Thank you to [choosealicense.com](https://choosealicense.com/licenses/) for providing the text content for various licenses`;
 
     return fileText;
 }
@@ -88,7 +96,3 @@ ${fileText}`;
 module.exports = {
     README
 };
-
-// TODO:
-// ADD QUESTIONS SECTION TO README
-    // INCLUDES USERNAME AND EMAIL
