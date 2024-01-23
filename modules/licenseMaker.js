@@ -1,8 +1,8 @@
 function craftLicense(licenseType, fullname) {
     const year = new Date(Date.now()).getFullYear();
     const license = {
-        badge,
-        text,
+        badge: '',
+        text: '',
     };
 
     switch (licenseType) {

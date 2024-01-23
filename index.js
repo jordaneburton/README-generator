@@ -103,12 +103,17 @@ function init() {
             const license = licenseMaker.craftLicense(data.license, data.fullname);
 
             // create/overwrite README and LICENSE files
-            fs.writeFile('README.md', format.README(data));
-            fs.writeFile('LICENSE.txt', license.text);
+            fs.writeFile('README.md', format.README(data), (err) =>
+                err ? console.error(err) : console.log('Success!')
+            );
+            fs.writeFile('LICENSE', license.text, (err) =>
+                err ? console.error(err) : console.log('Success!')
+            );
         })
 
 }
 
+init();
 // TODO: 
 // CONNECT LICENSE TO TOP OF README
 // LINK EMAIL AND USERNAME TO PROFILES
