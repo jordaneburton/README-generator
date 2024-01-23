@@ -40,12 +40,25 @@ ${response.contribute}
 
 ${response.test}
 `;
+    
+    contents.push(`[Questions](#questions)`);
+    // template literal
+    fileText = `${fileText}
+## <a id='questions'>Questions</a>
+
+If you have any questions, contact me using the following links:
+- Email: (${response.email})
+- GitHub: [${response.username}](https://github.com/${response.username})
+`;
     }
+
     contents.forEach((section, index) => {
         // template literal
         tableContents = `${tableContents}
 ${index + 1}. ${section}`
     });
+
+    // Craft full README with filled sections
     // template literal
     fileText = `# ${response.title} 
 
